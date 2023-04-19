@@ -6,8 +6,8 @@ class calculate extends JFrame implements ActionListener{
     JButton sum;
     JTextField num1 ,num2;
     calculate(){
-        x = new JLabel("Number");
-        y = new JLabel("Number2");
+        x = new JLabel("x");
+        y = new JLabel("y");
         num1 = new JTextField(20);
         num2 = new JTextField(20);
         sum = new JButton("Sum");
