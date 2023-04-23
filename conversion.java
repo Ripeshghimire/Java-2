@@ -3,13 +3,13 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class conversion extends JFrame implements ActionListener {
-    JLabel Distance,Output;
+    JLabel Metre_Distance,Output;
     JTextField metre; 
     JRadioButton mile,kilometer,centimeter;
     JTextField display;
     JButton convert;
     conversion(){
-        Distance = new JLabel("Distance");
+        Metre_Distance = new JLabel("Distance(in metre)");
         Output = new JLabel("Output");
         metre = new JTextField(20);
         mile = new JRadioButton("mile");
@@ -21,7 +21,7 @@ public class conversion extends JFrame implements ActionListener {
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
-        add(Distance); add(metre);
+        add(Metre_Distance); add(metre);
         add(mile); add(kilometer); add(centimeter);
         add(Output); add(display);
         add(convert);
@@ -33,7 +33,7 @@ public class conversion extends JFrame implements ActionListener {
         //throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
         int x = Integer.parseInt(metre.getText());
         if(mile.isSelected()){
-            int mile = (int) (0.000621371 * x) ;
+            double mile =  0.000621371 * x ;
             display.setText("in miles " + mile);
         }else if(kilometer.isSelected()){
             int kilo = (int) (0.001 * x );
