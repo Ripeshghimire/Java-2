@@ -34,13 +34,13 @@ public class conversion extends JFrame implements ActionListener {
         int x = Integer.parseInt(metre.getText());
         if(mile.isSelected()){
             double mile =  0.000621371 * x ;
-            display.setText("in miles " + mile);
+            display.setText(mile+"miles");
         }else if(kilometer.isSelected()){
-            int kilo = (int) (0.001 * x );
-            display.setText("in kilometer" +kilo);
+            double kilo =  0.001 * x ;
+            display.setText( kilo+"km");
         }else{
-            int cm  = (int) (100 * x);
-            display.setText("in cm "+ cm );
+            double cm  =  100 * x;
+            display.setText(cm+"cm " );
         }
     }
     public static void main(String[] args) {
