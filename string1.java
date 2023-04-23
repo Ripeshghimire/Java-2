@@ -28,9 +28,8 @@ public class string1 extends JFrame implements ActionListener{
         String s = string1.getText();
         int x = s.length();
         char firstChar = s.charAt(0);
-        if(e.getSource()==display){
             result.setText("Length of string: " + x + ", First character: " + firstChar);
-           }
+           
         
     }    
 
