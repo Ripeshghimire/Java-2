@@ -29,15 +29,10 @@ public class Rectangle extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
         add(length);add(l);
-        add(Box.createRigidArea(new Dimension(0, 5)));
         add(breadth); add(b);
-        add(Box.createRigidArea(new Dimension(0, 5)));
         add(height);add(h);
-        add(Box.createRigidArea(new Dimension(0, 5)));
         add(area); add(volume);add(perimeter);
-        add(Box.createRigidArea(new Dimension(0, 5)));
         add(calculate);
-        add(Box.createRigidArea(new Dimension(0, 5)));
         add(Output);
         add(display);
         calculate.addActionListener(this);
