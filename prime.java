@@ -29,6 +29,7 @@ public class prime extends JFrame implements ActionListener{
                 c++;
             }
         }
+        
         if(c<=2){
             display.setText(a+"is a prime number");
         }
