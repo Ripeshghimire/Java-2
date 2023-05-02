@@ -11,7 +11,7 @@ public class factorial extends JFrame implements ActionListener {
         fnum1 = new JTextField(20);
         btn = new JButton("display");
         display = new JTextField(20);
-        setSize(300, 300);
+        setSize(400, 400);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
